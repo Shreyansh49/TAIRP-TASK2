@@ -1,0 +1,301 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            position: relative;
+        }
+
+        #navbar ul {
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar ul li {
+            list-style: none;
+        }
+
+        #navbar ul li a {
+            display: block;
+            font-size: 25px;
+            padding: 4px 18px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 800;
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: transparent;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+
+
+        }
+
+        #logo {
+            margin: 2px 2px;
+        }
+
+        #logo img {
+            margin: 1px 14px;
+            height: 60px;
+            width: 60px;
+            border-radius: 200px;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            height: 460px;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            padding: 5px 50px;
+            text-align: center;
+        }
+
+        #home::before {
+            content: "";
+            background: url("foodbg.jpg") no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .first {
+            padding-bottom: 50px;
+            font-size: 2.8rem;
+            text-decoration: underline;
+        }
+
+        #home h1 {
+            text-decoration: underline;
+        }
+
+        #home p {
+            font-size: 1.5rem;
+            padding-bottom: 25px;
+            font-style: italic;
+            font-weight: 700;
+            background-color: rgba(240, 248, 255, 0.24);
+            border-radius: 12px;
+            width:100%;
+        }
+
+        .btn {
+            margin-top:10px;
+            height: 1.8rem;
+            width: 50%;
+            background-color: rgb(241, 216, 221);
+            border-radius: 15px;
+        }
+
+        .btn:hover {
+            font-weight: bold;
+            background-color: rgb(240, 238, 238);
+            cursor: grab;
+        }
+
+        .centre {
+            text-align: center;
+        }
+
+
+        #services h1 {
+            margin-top: 150px;
+            text-decoration: none;
+        }
+
+        .cont {
+            display: flex;
+        }
+
+        .box {
+            border: 2px solid rgb(245, 72, 72);
+            border-radius: 25px;
+            margin: 5px 4px;
+            padding: 5px 5px;
+            background-color: mistyrose;
+        }
+
+        .box img {
+            display: block;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border-radius: 25px;
+            padding: 2px;
+            margin-top: 8px;
+        }
+
+        .second {
+            margin: 7px 3px;
+        }
+
+        #client {
+            margin-top: 100px;
+
+        }
+
+        .clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2px 0px;
+        }
+
+        #client::before {
+            content: "";
+            background: url("bgrec.jpg") repeat-x center center/cover;
+            /* content: ""; */
+            /* background: url("rose-1309866.jpg") no-repeat center center/cover; */
+            height: 70%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.6;
+            margin: -40px 0px 0px 0px;
+
+        }
+
+        #client h1 {
+            text-decoration: underline;
+        }
+
+        .imgcont {
+
+
+            margin: 20px 30px;
+        }
+
+        .img1 {
+            border-radius: 125px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .img2 {
+            border-radius: 125px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .img3 {
+            border-radius: 125px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .img4 {
+            border-radius: 125px;
+            height: 200px;
+            width: 200px;
+            /* padding: 25px; */
+        }
+
+        #form {
+            margin-top: 130px;
+        }
+
+        #form::before {
+            content: "";
+            background: url("bgcontact.jpg") no-repeat center center/cover;
+            height: 85%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .form input {
+            display: block;
+            background-color: transparent;
+            width: 85%;
+            height: 23px;
+            margin:10px auto 10px auto;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+
+        .form form {
+            width: 35%;
+
+            /* border:1px solid black; */
+            padding: 4px;
+            margin-top: 4px;
+        }
+
+
+
+        .form label {
+            font-size: 1.2rem;
+            font-weight: bolder;
+            margin:0px 36px;
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+        }
+
+        .form h1 {
+            padding-top: 10px;
+            margin: 15px 0px;
+        }
+
+        .submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 15px 0px;
+            padding: 1px
+        }
+
+        .btn1 {
+            height: 25px;
+            width: 100%;
+            border-radius: 15px;
+            font-weight: 800;
+        }
+
+        .btn1:hover {
+            background-color: rgb(192, 242, 255);
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: transparent;
+            display: block;
+            margin-top: 35px;
+            height: 30px;
+            width: 100%;
+
+            color: rgb(0, 0, 0);
+        }
+
+    
